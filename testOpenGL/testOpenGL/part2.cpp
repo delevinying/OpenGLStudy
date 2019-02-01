@@ -62,7 +62,7 @@ int main(){
     char infoLog[512];
     glGetShaderiv(vertexShader,GL_COMPILE_STATUS,&success);
     if(!success){
-        glGetShaderInfoLog(vertexShader,512,NULL,infoLog);//
+        glGetShaderInfoLog(vertexShader,512,NULL,infoLog);//获取出错log
         std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
     }
     
@@ -71,20 +71,20 @@ int main(){
     glCompileShader(fragmentShader);
     glGetShaderiv(fragmentShader,GL_COMPILE_STATUS,&success);
     if(!success){
-        glGetShaderInfoLog(fragmentShader, 512, NULL, infoLog);
+        glGetShaderInfoLog(fragmentShader, 512, NULL, infoLog);//获取出错log
         std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLog << std::endl;
     }
     //把两个着色器关联上一个着色器program
     int shaderProgram = glCreateProgram();
-    glAttachShader(shaderProgram,vertexShader);
+    glAttachShader(shaderProgram,vertexShader);//顶点着色器和片段着色器都关联上着色器程序
     glAttachShader(shaderProgram,fragmentShader);
     glLinkProgram(shaderProgram);
     glGetProgramiv(shaderProgram,GL_LINK_STATUS,&success);
     if(!success){
-        glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
+        glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);//出错log
         std::cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << std::endl;
     }
-    glDeleteShader(vertexShader);//删除，
+    glDeleteShader(vertexShader);//删除，顶点着色器和片段着色器都不需要再使用，数据都在着色器程序内
     glDeleteShader(fragmentShader);
     
     //三角形的三个顶点坐标
@@ -94,6 +94,8 @@ int main(){
         0.0f,  0.5f, 0.0f
     };
     
+    //顶点数组对象：Vertex Array Object，VAO
+    //顶点缓冲对象：Vertex Buffer Object，VBO
     unsigned int VBO,VAO;
     glGenVertexArrays(1,&VAO);
     glGenBuffers(1,&VBO);
