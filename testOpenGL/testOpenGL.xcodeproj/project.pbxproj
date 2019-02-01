@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DEA688D221FFE42300FD863A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEA688D121FFE42300FD863A /* main.cpp */; };
+		DEA688D221FFE42300FD863A /* part1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEA688D121FFE42300FD863A /* part1.cpp */; };
 		DEA688DA21FFE50500FD863A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA688D921FFE50500FD863A /* OpenGL.framework */; };
 		DEA6890C21FFFAEA00FD863A /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = DEA6890B21FFFAEA00FD863A /* glad.c */; };
 		DEA68916220009E600FD863A /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA68915220009E600FD863A /* libglfw.3.2.dylib */; };
 		DEA68918220009F900FD863A /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA68917220009F900FD863A /* libGLEW.2.1.0.dylib */; };
 		DEA6891A22000A0F00FD863A /* GLFW in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA6891922000A0F00FD863A /* GLFW */; };
 		DEA6891C22000A1E00FD863A /* GL in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA6891B22000A1E00FD863A /* GL */; };
-		DEFBA10222002B44003D7DF4 /* part2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEFBA10122002B44003D7DF4 /* part2.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,14 +30,13 @@
 
 /* Begin PBXFileReference section */
 		DEA688CE21FFE42300FD863A /* testOpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testOpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEA688D121FFE42300FD863A /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; name = main.cpp; path = "/Users/delevinying/Documents/openGL_c++/OpenGLStudy/testOpenGL/testOpenGL/main.cpp"; sourceTree = "<absolute>"; };
+		DEA688D121FFE42300FD863A /* part1.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; name = part1.cpp; path = "/Users/delevinying/Documents/openGL_c++/OpenGLStudy/testOpenGL/testOpenGL/part1.cpp"; sourceTree = "<absolute>"; };
 		DEA688D921FFE50500FD863A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		DEA6890B21FFFAEA00FD863A /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glad.c; path = ../../../../../Downloads/glad/src/glad.c; sourceTree = "<group>"; };
 		DEA68915220009E600FD863A /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
 		DEA68917220009F900FD863A /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../../../usr/local/Cellar/glew/2.1.0/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
 		DEA6891922000A0F00FD863A /* GLFW */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GLFW; path = ../../../../../../usr/local/Cellar/glfw/3.2.1/include/GLFW; sourceTree = "<group>"; };
 		DEA6891B22000A1E00FD863A /* GL */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GL; path = ../../../../../../usr/local/Cellar/glew/2.1.0/include/GL; sourceTree = "<group>"; };
-		DEFBA10122002B44003D7DF4 /* part2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = part2.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				DEA6890B21FFFAEA00FD863A /* glad.c */,
-				DEA688D121FFE42300FD863A /* main.cpp */,
-				DEFBA10122002B44003D7DF4 /* part2.cpp */,
+				DEA688D121FFE42300FD863A /* part1.cpp */,
 			);
 			path = testOpenGL;
 			sourceTree = "<group>";
@@ -152,9 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEA688D221FFE42300FD863A /* main.cpp in Sources */,
+				DEA688D221FFE42300FD863A /* part1.cpp in Sources */,
 				DEA6890C21FFFAEA00FD863A /* glad.c in Sources */,
-				DEFBA10222002B44003D7DF4 /* part2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
