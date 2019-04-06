@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE52D76F222B58C900D767C8 /* Part3_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE52D76E222B58C900D767C8 /* Part3_3.cpp */; };
-		DE52D775222B60C400D767C8 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE52D773222B60C400D767C8 /* Shader.cpp */; };
+		DE3552FF22586B5800A34F41 /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE3552FE22586B5800A34F41 /* stb_image.cpp */; };
+		DE3A580822575C49009C8264 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = DE3A580722575C49009C8264 /* glad.c */; };
+		DE3A580A22576A2C009C8264 /* part4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE3A580922576A2C009C8264 /* part4.cpp */; };
 		DEA688DA21FFE50500FD863A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA688D921FFE50500FD863A /* OpenGL.framework */; };
-		DEA6890C21FFFAEA00FD863A /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = DEA6890B21FFFAEA00FD863A /* glad.c */; };
 		DEA68916220009E600FD863A /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA68915220009E600FD863A /* libglfw.3.2.dylib */; };
 		DEA68918220009F900FD863A /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA68917220009F900FD863A /* libGLEW.2.1.0.dylib */; };
 		DEA6891A22000A0F00FD863A /* GLFW in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA6891922000A0F00FD863A /* GLFW */; };
@@ -30,12 +30,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DE52D76E222B58C900D767C8 /* Part3_3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Part3_3.cpp; sourceTree = "<group>"; };
-		DE52D773222B60C400D767C8 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
-		DE52D774222B60C400D767C8 /* Shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Shader.hpp; sourceTree = "<group>"; };
+		DE3552FE22586B5800A34F41 /* stb_image.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stb_image.cpp; sourceTree = "<group>"; };
+		DE35530022586CE000A34F41 /* texture.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = texture.fs; sourceTree = "<group>"; };
+		DE35530122586CE000A34F41 /* texture.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = texture.vs; sourceTree = "<group>"; };
+		DE355304225874F200A34F41 /* garen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = garen.jpg; sourceTree = "<group>"; };
+		DE3A580722575C49009C8264 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glad.c; path = ../../../../allLib/glad/src/glad.c; sourceTree = "<group>"; };
+		DE3A580922576A2C009C8264 /* part4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = part4.cpp; sourceTree = "<group>"; };
 		DEA688CE21FFE42300FD863A /* testOpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testOpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA688D921FFE50500FD863A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		DEA6890B21FFFAEA00FD863A /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glad.c; path = ../../../../../Downloads/glad/src/glad.c; sourceTree = "<group>"; };
 		DEA68915220009E600FD863A /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
 		DEA68917220009F900FD863A /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../../../usr/local/Cellar/glew/2.1.0/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
 		DEA6891922000A0F00FD863A /* GLFW */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GLFW; path = ../../../../../../usr/local/Cellar/glfw/3.2.1/include/GLFW; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE3A580B22577166009C8264 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE355304225874F200A34F41 /* garen.jpg */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
 		DEA688C521FFE42300FD863A = {
 			isa = PBXGroup;
 			children = (
@@ -78,10 +88,12 @@
 		DEA688D021FFE42300FD863A /* testOpenGL */ = {
 			isa = PBXGroup;
 			children = (
-				DE52D773222B60C400D767C8 /* Shader.cpp */,
-				DE52D774222B60C400D767C8 /* Shader.hpp */,
-				DEA6890B21FFFAEA00FD863A /* glad.c */,
-				DE52D76E222B58C900D767C8 /* Part3_3.cpp */,
+				DE35530022586CE000A34F41 /* texture.fs */,
+				DE35530122586CE000A34F41 /* texture.vs */,
+				DE3A580B22577166009C8264 /* resources */,
+				DE3A580722575C49009C8264 /* glad.c */,
+				DE3A580922576A2C009C8264 /* part4.cpp */,
+				DE3552FE22586B5800A34F41 /* stb_image.cpp */,
 			);
 			path = testOpenGL;
 			sourceTree = "<group>";
@@ -154,9 +166,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE52D76F222B58C900D767C8 /* Part3_3.cpp in Sources */,
-				DE52D775222B60C400D767C8 /* Shader.cpp in Sources */,
-				DEA6890C21FFFAEA00FD863A /* glad.c in Sources */,
+				DE3552FF22586B5800A34F41 /* stb_image.cpp in Sources */,
+				DE3A580822575C49009C8264 /* glad.c in Sources */,
+				DE3A580A22576A2C009C8264 /* part4.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,9 +293,8 @@
 				HEADER_SEARCH_PATHS = (
 					/usr/local/Cellar/glew/2.1.0/include,
 					/usr/local/Cellar/glfw/3.2.1/include,
-					/usr/local/Cellar/glfw/3.2.1/include,
-					/usr/local/Cellar/glfw/3.2.1/include,
 					/usr/local/include,
+					/Users/delevinying/Documents/C_code,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					/usr/local/Cellar/glfw/3.2.1/lib,
@@ -301,9 +312,8 @@
 				HEADER_SEARCH_PATHS = (
 					/usr/local/Cellar/glew/2.1.0/include,
 					/usr/local/Cellar/glfw/3.2.1/include,
-					/usr/local/Cellar/glfw/3.2.1/include,
-					/usr/local/Cellar/glfw/3.2.1/include,
 					/usr/local/include,
+					/Users/delevinying/Documents/C_code,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					/usr/local/Cellar/glfw/3.2.1/lib,

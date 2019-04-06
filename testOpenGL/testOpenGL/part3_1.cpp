@@ -5,7 +5,6 @@
 //  Created by 应云超 on 2019/2/1.
 //  Copyright © 2019年 应云超. All rights reserved.
 //
-
 #include <iostream>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
