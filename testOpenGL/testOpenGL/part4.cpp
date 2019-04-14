@@ -14,8 +14,6 @@ const unsigned int SCR_HEIGHT = 600;
 
 int main()
 {
-    // glfw: initialize and configure
-    // ------------------------------
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
@@ -23,9 +21,7 @@ int main()
 #ifdef __APPLE__
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 #endif
-    // glfw window creation
-    // --------------------
-    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "4.纹理", NULL, NULL);
     if(window == NULL){
         std::cout << "窗口创建失败" << std::endl;
         glfwTerminate();//终止
@@ -53,12 +49,11 @@ int main()
     // ------------------------------------
     Shader ourShader("/Users/delevinying/Documents/openGL_c++/OpenGLStudy/testOpenGL/testOpenGL/texture.vs", "/Users/delevinying/Documents/openGL_c++/OpenGLStudy/testOpenGL/testOpenGL/texture.fs");
     
-    
-    float vertices[] = {    // ��Ⱦ���������������
-        -0.5f, -0.5f, 0.0f,  0.0f, 0.0f, 1.0f,  0.0f, 0.0f,        // ��Ⱦ�������������
-        0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f,  1.0f, 0.0f,        // ��Ⱦ�������������
-        0.0f,  0.5f, 0.0f,  1.0f, 0.0f, 0.0f,  0.5f, 1.0f        // ��Ⱦ�������������
-    };        // ��Ⱦ�������������
+    float vertices[] = {
+        -0.5f, -0.5f, 0.0f,  0.0f, 0.0f, 1.0f,  0.0f, 0.0f,
+        0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f,  1.0f, 0.0f,
+        0.0f,  0.5f, 0.0f,  1.0f, 0.0f, 0.0f,  0.5f, 1.0f
+    };
     
     unsigned int VBO, VAO, EBO;
     glGenVertexArrays(1, &VAO);
